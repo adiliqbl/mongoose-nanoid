@@ -1,10 +1,10 @@
 const nanoid = require('nanoid');
 
 function nanoidPlugin(schema, length) {
+    length = length || 12
+
     let _id = '_id';
     const dataObj = {};
-
-    if (!length) length = 12;
 
     dataObj[_id] = {
         type: String,

@@ -1,0 +1,30 @@
+{
+  "name": "mongoose-nanoid",
+  "version": "1.0.0",
+  "author": "Adil Iqbal <adil.iqbal@tintash.com>",
+  "description": "Custom id plugin for Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha tests/*.js -R spec --ui bdd --timeout 5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/adiliqbl/mongoose-nanoid"
+  },
+  "keywords": [
+    "mongoose",
+    "nanoid",
+    "shortid",
+    "customid",
+    "plugin"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "nanoid": "^2.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "mongoose": "^5.3.9",
+    "should": "^13.2.3"
+  }
+}

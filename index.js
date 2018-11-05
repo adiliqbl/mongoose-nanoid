@@ -1,21 +1,11 @@
 const nanoid = require('nanoid');
 
-function nanoidPlugin(schema, options) {
+function nanoidPlugin(schema, length) {
     let _id = '_id';
     const dataObj = {};
-    let length = 12;
 
-    if (options) {
-        if (options instanceof String) {
-            length = Number(options)
-        } else if (options instanceof Number) {
-            length = options;
-        } else if (options instanceof Object) {
-            if (options && options.length) {
-                length = options.length;
-            }
-        }
-    }
+    if (!length) length = 12;
+    console.log(length);
 
     dataObj[_id] = {
         type: String,

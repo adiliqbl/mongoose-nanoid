@@ -11,7 +11,7 @@ mongoose.on('error', function (err) {
 });
 
 const fieldName = '_id';
-const length = 9;
+const length = 12;
 
 
 const IdCheckSchema = new Schema({

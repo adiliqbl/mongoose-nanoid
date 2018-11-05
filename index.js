@@ -3,7 +3,7 @@ const nanoid = require('nanoid');
 function nanoidPlugin(schema, options) {
     let _id = '_id';
     const dataObj = {};
-    let length = 9;
+    let length = 12;
 
     if (options) {
         if (options instanceof String) {

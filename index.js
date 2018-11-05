@@ -5,7 +5,6 @@ function nanoidPlugin(schema, length) {
     const dataObj = {};
 
     if (!length) length = 12;
-    console.log(length);
 
     dataObj[_id] = {
         type: String,

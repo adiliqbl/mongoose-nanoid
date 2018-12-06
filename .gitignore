@@ -44,6 +44,7 @@ typings/
 
 .idea/
 .idea
+.idea/*
 
 # Optional eslint cache
 .eslintcache

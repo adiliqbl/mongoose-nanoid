@@ -31,7 +31,7 @@ RefCheckSchema.plugin(require('../index'), length);
 const IdCheck = mongoose.model('IdCheck', IdCheckSchema);
 const RefCheck = mongoose.model('RefCheck', RefCheckSchema);
 
-describe('custom name nanoid', function () {
+describe('SchemaId Test', function () {
     it('should have the _id field created by nanoid', function (done) {
         const nameOnlySchema = new IdCheck({email: 'mail@test.com'});
         nameOnlySchema.save(function (err) {

@@ -1,7 +1,9 @@
 const nanoid = require('nanoid');
 
 function nanoidPlugin(schema, length) {
-    length = length || 12
+    if (schema.options._id !== undefined && schema.options._id === false) return;
+
+    length = length || 12;
 
     let _id = '_id';
     const dataObj = {};
@@ -15,7 +17,7 @@ function nanoidPlugin(schema, length) {
 
     schema.add(dataObj);
     schema.pre('save', function (next) {
-        if (this.isNew) {
+        if (this.isNew && !this.constructor.$isArraySubdocument) {
             attemptToGenerate(this, length)
                 .then(function (newId) {
                     this[_id] = newId;

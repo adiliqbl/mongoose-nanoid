@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e196eb3-0fc9-4715-97ff-a3a1bb28accb" name="Default Changelist" comment="">
+    <list default="true" id="3e196eb3-0fc9-4715-97ff-a3a1bb28accb" name="Default Changelist" comment="- Possible fix for sub documents">
+      <change afterPath="$PROJECT_DIR$/test/subdocument_test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/schemaId_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/schemaId_test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,38 +21,40 @@
     <session id="1638015529">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="3" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="6" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="4" />
-          <entry key="js" value="4" />
-          <entry key="json" value="6" />
+          <entry key="gitignore" value="5" />
+          <entry key="js" value="15" />
+          <entry key="json" value="9" />
+          <entry key="ts" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="6" />
-          <entry key="JavaScript" value="4" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="JSON" value="9" />
+          <entry key="JavaScript" value="15" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="TypeScript" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gitignore" value="15" />
-          <entry key="js" value="389" />
+          <entry key="gitignore" value="28" />
+          <entry key="js" value="1735" />
           <entry key="json" value="109" />
-          <entry key="txt" value="126" />
+          <entry key="txt" value="168" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="109" />
-          <entry key="JavaScript" value="389" />
-          <entry key="PLAIN_TEXT" value="141" />
+          <entry key="JavaScript" value="1735" />
+          <entry key="PLAIN_TEXT" value="196" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -58,20 +63,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="240">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/subdocument_test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="103">
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -88,6 +93,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>node_mo</find>
+      <find>console.log</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -96,10 +102,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/test/schemaId_test.js" />
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/test/schemaId_test.js" />
+        <option value="$PROJECT_DIR$/test/subdocument_test2.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/test/subdocument_test.js" />
       </list>
     </option>
   </component>
@@ -108,6 +116,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -168,6 +179,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -183,7 +195,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Mocha.Sub document Test">
+    <configuration name="Sub document Test (1)" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/subdocument_test2.js</test-file>
+      <test-names>
+        <name value="Sub document Test" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sub document Test" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/subdocument_test.js</test-file>
+      <test-names>
+        <name value="Sub document Test" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Subdocument Test" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/subdocument_test.js</test-file>
+      <test-names>
+        <name value="Subdocument Test" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="custom name nanoid" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -198,8 +252,17 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Mocha.custom name nanoid" />
+      <item itemvalue="Mocha.Subdocument Test" />
+      <item itemvalue="Mocha.Sub document Test" />
+      <item itemvalue="Mocha.Sub document Test (1)" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.Sub document Test" />
+        <item itemvalue="Mocha.Sub document Test (1)" />
+        <item itemvalue="Mocha.Subdocument Test" />
         <item itemvalue="Mocha.custom name nanoid" />
       </list>
     </recent_temporary>
@@ -216,7 +279,10 @@
       <updated>1541417118820</updated>
       <workItem from="1541417120049" duration="2178000" />
       <workItem from="1541419589698" duration="107000" />
-      <workItem from="1541422365405" duration="2637000" />
+      <workItem from="1541422365405" duration="4513000" />
+      <workItem from="1544078813947" duration="1587000" />
+      <workItem from="1544082209564" duration="1177000" />
+      <workItem from="1544088539278" duration="3482000" />
     </task>
     <task id="LOCAL-00001" summary="- Initial">
       <created>1541419392122</created>
@@ -260,19 +326,50 @@
       <option name="project" value="LOCAL" />
       <updated>1541425090172</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="- Refactor">
+      <created>1541425106402</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1541425106402</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="custom_name_nanoid - 2018.11.05 at 18h 12m 36s.xml">
-      <configuration name="custom name nanoid" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Sub_document_Test - 2018.12.06 at 15h 21m 56s.xml">
+      <configuration name="Sub document Test" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="custom_name_nanoid - 2018.11.05 at 18h 13m 20s.xml">
-      <configuration name="custom name nanoid" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Sub_document_Test - 2018.12.06 at 15h 22m 08s.xml">
+      <configuration name="Sub document Test" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Sub_document_Test - 2018.12.06 at 15h 23m 03s.xml">
+      <configuration name="Sub document Test" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Sub_document_Test - 2018.12.06 at 15h 24m 00s.xml">
+      <configuration name="Sub document Test" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Sub_document_Test - 2018.12.06 at 15h 24m 26s.xml">
+      <configuration name="Sub document Test" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Sub_document_Test - 2018.12.06 at 15h 24m 28s.xml">
+      <configuration name="Sub document Test" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Sub_document_Test - 2018.12.06 at 15h 25m 14s.xml">
+      <configuration name="Sub document Test" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Sub_document_Test - 2018.12.06 at 15h 25m 27s.xml">
+      <configuration name="Sub document Test" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Sub_document_Test - 2018.12.06 at 15h 26m 10s.xml">
+      <configuration name="Sub document Test" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Sub_document_Test - 2018.12.06 at 15h 26m 17s.xml">
+      <configuration name="Sub document Test" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4922000" />
+    <option name="totallyTimeSpent" value="13044000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -287,19 +384,19 @@
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962853" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962853" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32854864" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.49760765" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39872408" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32854864" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32854864" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32854864" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -322,24 +419,41 @@
     <option name="LAST_COMMIT_MESSAGE" value="- Refactor" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="201">
+          <caret line="382" selection-start-line="382" selection-end-line="382" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/schemaId_test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="495">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="133">
+          <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/subdocument_test2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
+          <folding>
+            <element signature="e#281#1388#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -347,6 +461,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/subdocument_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>

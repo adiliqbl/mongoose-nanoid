@@ -13,7 +13,11 @@ mongoose.plugin(require('mongoose-nanoid'), size) // custom size. see nanoid for
 // or opt out for schemas
 const plugin = ;
 var UserSchema = new Schema({
-    username: String
+    username: String,
+    address : new Schema({
+        street: String,
+        City: String
+    }, {_id: false})
 });
 UserSchema.plugin(require('mongoose-nanoid')); // default size = 12
 const User = mongoose.model('User', UserSchema);

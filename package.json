@@ -6,7 +6,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "test": "./node_modules/.bin/mocha tests/*.js -R spec --ui bdd --timeout 5000"
+    "test": "./node_modules/.bin/mocha test/*.js -R spec --ui bdd --timeout 5000"
   },
   "repository": {
     "type": "git",

@@ -4,6 +4,7 @@
   "author": "Adil Iqbal <adil.iqbal@tintash.com>",
   "description": "Custom id plugin for Mongoose",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "./node_modules/.bin/mocha tests/*.js -R spec --ui bdd --timeout 5000"
   },

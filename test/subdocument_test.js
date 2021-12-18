@@ -2,7 +2,7 @@ const mocha = require('mocha');
 const should = require('should');
 let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
-let nanoid = require('nanoid');
+let { nanoid } = require('nanoid');
 
 mongoose.plugin(require('../index'), 12);
 mongoose = mongoose.createConnection('mongodb://localhost/test');

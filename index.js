@@ -1,4 +1,4 @@
-const nanoid = require('nanoid');
+const { nanoid } = require('nanoid');
 
 function nanoidPlugin(schema, length) {
     if (schema.options._id !== undefined && schema.options._id === false) return;

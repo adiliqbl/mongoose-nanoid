@@ -31,7 +31,7 @@ const RefCheckSchema = new Schema({
 	}
 });
 
-IdCheckNormalSchema.plugin(require('../index'), { length: options.length });
+IdCheckNormalSchema.plugin(require('../index'), options.length);
 IdCheckAlphebtsSchema.plugin(require('../index'), options);
 RefCheckSchema.plugin(require('../index'), options);
 

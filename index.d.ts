@@ -7,4 +7,4 @@ interface Options {
     alphabets?: boolean;
 }
 
-export default function nanoidPlugin(schema: Schema, options?: Options): void
+export default function nanoidPlugin(schema: Schema, options?: Options | number): void

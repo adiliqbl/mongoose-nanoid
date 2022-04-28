@@ -34,7 +34,7 @@ describe('Sub document Test', function () {
         });
 
         subDoc.save(function (err) {
-            if (err) console.log(err);
+            if (err) console.error(err);
             done();
         });
     });

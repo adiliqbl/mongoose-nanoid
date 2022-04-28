@@ -73,7 +73,6 @@ describe('SchemaId Test', function () {
 
 	it('should have same _id on saving', function (done) {
 		IdCheck.findOne({ email: 'mail@test.com' }, function (err, found) {
-			console.log(found);
 			found.email = 'newmail@test.com';
 			found.save(function (err, updated) {
 				updated[fieldName].should.be.equal(found[fieldName]);
@@ -98,7 +97,7 @@ describe('SchemaId Test', function () {
 						done();
 					})
 					.catch(function (error) {
-						console.log(error)
+						console.error(error)
 					});
 			});
 		});

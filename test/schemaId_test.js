@@ -13,11 +13,14 @@ mongoose.on('error', function (err) {
 const fieldName = '_id';
 const options = {
 	length: 12,
-	alphabets: "abcd@"
+	alphabets: "abcdefgh@"
 }
 
+const IdCheckNormalSchema = new Schema({
+	email: String
+});
 
-const IdCheckSchema = new Schema({
+const IdCheckAlphebtsSchema = new Schema({
 	email: String
 });
 
@@ -28,19 +31,42 @@ const RefCheckSchema = new Schema({
 	}
 });
 
-IdCheckSchema.plugin(require('../index'), options);
+IdCheckNormalSchema.plugin(require('../index'), { length: options.length });
+IdCheckAlphebtsSchema.plugin(require('../index'), options);
 RefCheckSchema.plugin(require('../index'), options);
 
-const IdCheck = mongoose.model('IdCheck', IdCheckSchema);
+const IdCheck = mongoose.model('IdCheck', IdCheckNormalSchema);
+const IdCheckAlphabets = mongoose.model('IdCheckAlphabets', IdCheckAlphebtsSchema);
 const RefCheck = mongoose.model('RefCheck', RefCheckSchema);
 
 describe('SchemaId Test', function () {
 	it('should have the _id field created by nanoid', function (done) {
+		const validate = (schema) => {
+			schema.should.have.property(fieldName);
+			schema[fieldName].should.be.a.String;
+			schema[fieldName].length.should.be.belowOrEqual(options.length);
+		};
+
 		const nameOnlySchema = new IdCheck({ email: 'mail@test.com' });
+		validate(nameOnlySchema);
 		nameOnlySchema.save(function () {
-			nameOnlySchema.should.have.property(fieldName);
-			nameOnlySchema[fieldName].should.be.a.String;
-			nameOnlySchema[fieldName].length.should.be.belowOrEqual(options.length);
+			validate(nameOnlySchema);
+			done();
+		});
+	});
+
+	it('should have the _id field created by nanoid.customAlphabet', function (done) {
+		const validate = (schema) => {
+			schema.should.have.property(fieldName);
+			schema[fieldName].should.be.a.String;
+			schema[fieldName].should.match(new RegExp(`[${options.alphabets}]+$`))
+			schema[fieldName].length.should.be.belowOrEqual(options.length);
+		};
+
+		const nameOnlySchema = new IdCheckAlphabets({ email: 'mail@test.com' });
+		validate(nameOnlySchema);
+		nameOnlySchema.save(function () {
+			validate(nameOnlySchema);
 			done();
 		});
 	});

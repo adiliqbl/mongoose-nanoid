@@ -17,7 +17,7 @@ function nanoidPlugin(schema, opts) {
 	dataObj[_id] = {
 		type: String,
 		default: function () {
-			return generator(opts)(length);
+			return generator(opts)(opts.length);
 		}
 	};
 

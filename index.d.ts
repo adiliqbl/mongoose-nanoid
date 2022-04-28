@@ -2,4 +2,9 @@ declare module 'mongoose-nanoid'
 
 import { Schema } from 'mongoose'
 
-export default function nanoidPlugin(schema: Schema, length?: number): void
+interface Options {
+    length?: number;
+    alphabets?: boolean;
+}
+
+export default function nanoidPlugin(schema: Schema, options?: Options): void

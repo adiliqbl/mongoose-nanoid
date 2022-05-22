@@ -13,7 +13,6 @@ mongoose.plugin(require('mongoose-nanoid'), size) // custom size. see nanoid for
 mongoose.plugin(require('mongoose-nanoid'), { length: size, alphabets: "abcd@" }) // custom size. see nanoid for more details
 
 // or opt out for schemas
-const plugin = ;
 var UserSchema = new Schema({
     username: String,
     address : new Schema({

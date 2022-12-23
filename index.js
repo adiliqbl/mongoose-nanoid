@@ -40,7 +40,7 @@ function nanoidPlugin(schema, opts) {
 
 function attemptToGenerate(doc, opts) {
 	const id = generator(opts)(opts.length);
-	return doc.constructor.findById(id)
+	return doc.constructor.exists({ _id: id })
 		.then(function (found) {
 			if (found) return attemptToGenerate(doc, opts.length);
 			return id

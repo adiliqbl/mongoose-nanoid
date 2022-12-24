@@ -58,12 +58,13 @@ jobs:
           name: Update version, tag & commit
           command: |
             git branch --set-upstream-to=origin/$CIRCLE_BRANCH $CIRCLE_BRANCH
+            git config pull.ff only
+            git config user.name "circleci"
+            git config user.email "circleci@adiliqbl.com"
             git pull
             
             npm version patch --force
-            
-            git config user.name "circleci"
-            git config user.email "circleci@adiliqbl.com"
+          
             declare -x VERSION=$(jq -r '.version' package.json)
             echo $VERSION
             git tag v$VERSION

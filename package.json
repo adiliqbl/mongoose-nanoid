@@ -1,6 +1,6 @@
 {
   "name": "mongoose-nanoid",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "author": "Adil Iqbal <adilxiqbal@gmail.com>",
   "description": "Custom id plugin for Mongoose",
   "main": "index.js",

@@ -51,9 +51,6 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/repo
-#      - add_ssh_keys:
-#          fingerprints:
-#            - "5f:08:a5:83:2b:4a:6f:d0:4a:58:0f:34:eb:ea:10:f4"
       - run:
           name: Add github.com to remote hosts
           command: |
@@ -74,15 +71,11 @@ jobs:
             
             npm version patch --force
           
-            declare -x VERSION=$(jq -r '.version' package.json)
-            echo $VERSION
-            git tag v$VERSION
             git remote -v
-            git push origin
-            git push origin --tags
-#      - run:
-#          name: Publish package
-#          command: npm publish
+            git push origin && git push origin -f --tags
+      - run:
+          name: Publish package
+          command: npm publish
 
 workflows:
   version: 2

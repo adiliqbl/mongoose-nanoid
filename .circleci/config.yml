@@ -65,8 +65,8 @@ jobs:
           command: |
             git branch --set-upstream-to=origin/$CIRCLE_BRANCH $CIRCLE_BRANCH
             git config pull.ff only
-            git config user.name "circleci"
-            git config user.email "circleci@adiliqbl.com"
+            git config user.name "adiliqbl"
+            git config user.email "circleci@adiliqbal.com"
             git pull
             
             npm version patch --force -m "[skip CI] Deployment"

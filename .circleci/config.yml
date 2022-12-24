@@ -66,7 +66,7 @@ jobs:
             git config user.email "circleci@adiliqbl.com"
             declare -x VERSION=$(jq -r '.version' package.json)
             echo $VERSION
-            git tag $ENVIRONMENT/$VERSION
+            git tag v$VERSION
             git remote -v
             git push origin
             git push origin --tags

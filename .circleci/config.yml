@@ -55,6 +55,22 @@ jobs:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
       - run:
+          name: Update version, tag & commit
+          command: |
+            git branch --set-upstream-to=origin/$CIRCLE_BRANCH $CIRCLE_BRANCH
+            git pull
+            
+            npm version patch --force
+            
+            git config user.name "circleci"
+            git config user.email "circleci@adiliqbl.com"
+            declare -x VERSION=$(jq -r '.version' package.json)
+            echo $VERSION
+            git tag $ENVIRONMENT/$VERSION
+            git remote -v
+            git push origin
+            git push origin --tags
+      - run:
           name: Publish package
           command: npm publish
 
